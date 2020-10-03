@@ -1,0 +1,15 @@
+Language: Cpp
+BasedOnStyle: Google
+AlignConsecutiveAssignments: true
+AlwaysBreakTemplateDeclarations: Yes
+BreakConstructorInitializersBeforeComma: true
+BreakBeforeTernaryOperators: true
+ContinuationIndentWidth: 2
+FixNamespaceComments: true
+IndentCaseLabels: true
+IndentPPDirectives: BeforeHash
+IndentWidth: 2
+PointerAlignment: Right
+SpacesBeforeTrailingComments: 2
+Standard: Cpp11
+UseTab: Never
