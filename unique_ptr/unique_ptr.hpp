@@ -42,7 +42,7 @@ class unique_ptr {
   ~unique_ptr() { this->deleter(this->object_); }
 
   // Modifiers
-  element_type *release() noexcept {
+  [[nodiscard]] element_type *release() noexcept {
     // checks if unique_ptr holds any object.
     if (this->object_ == nullptr) {
       return nullptr;
@@ -67,7 +67,7 @@ class unique_ptr {
   }
 
   // Observers...
-  element_type *get() const noexcept {
+  [[nodiscard]] element_type *get() const noexcept {
     // is this test necessary...?
     return this->object_ == nullptr ? nullptr : this->object_;
   }
